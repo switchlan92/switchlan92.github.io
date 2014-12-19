@@ -1,0 +1,246 @@
+﻿/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/* End of Eric Meyer's CSS Reset */
+
+
+
+
+
+
+/* Parallax Styles */
+.parallax {
+    perspective: 300px;
+    height: 500px; /* fallback */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax_group {
+    position: relative;
+    height: 500px; /* fallback */
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+.parallax_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.parallax_layer-fore {
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+}
+
+.parallax_layer-base {
+    transform: translateZ(0);
+    z-index: 4;
+}
+
+.parallax_layer-back {
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+}
+
+.parallax_layer-deep {
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+}
+/* End Parallax Styles */
+
+
+
+
+
+
+/* Font imports */
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('caviardreams-webfont.eot');
+    src: url('caviardreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('caviardreams-webfont.woff2') format('woff2'),
+         url('caviardreams-webfont.woff') format('woff'),
+         url('caviardreams-webfont.ttf') format('truetype'),
+         url('caviardreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: caviar_dreamsregular;
+    font-size: 28px;
+}
+
+/*html {
+    background: url(about.jpg) no-repeat left center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='about.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.about.jpg', sizingMethod='scale');
+
+}*/
+
+header {
+    display: block;
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+
+h1 {
+    text-align:left;
+    font-weight:700;
+    padding-bottom: 50px;
+}
+
+header #logo {
+    display: block;
+    padding-top: 300px;
+}
+
+.blurb {
+    display: block;
+    text-align: center;
+    width: 50%;
+    transform: translateX(50%);
+    margin-bottom: 300px;
+}
+
+.blurb-end {
+    display: block;
+    text-align: center;
+    width: 50%;
+    transform: translateX(50%);
+    margin-bottom: 100px;
+}
+
+.projectLogo {
+    display: block;
+    padding-bottom: 100px;
+
+    text-align: center;
+    margin:auto;
+}
+
+tr.space > td {
+    padding-top: 40px;
+}
+
+#nav {
+    position: fixed;
+    left: 50%; top: 20%;
+    margin-left:-368px;
+    width:750px;
+    list-style:none;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a {
+    display: block;
+    width: 180px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+}
+
+a {
+    text-decoration:none;
+    color: black;
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+}
+
+img.photography {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+a:hover {
+    color: #ff6a00;
+}
+
+#nav a:hover {
+    color: #ff6a00;
+}
+
+#nav li.active a {
+    color: #ff6a00;
+}
+
+#home {
+    position: absolute;
+}
+
+#spot {
+    position: absolute;
+    top: 940px;
+}
+
+#uprising {
+    position: absolute;
+    top: 1965px;
+}
+
+#contact {
+    position: absolute;
+    top: 3560px;
+}
