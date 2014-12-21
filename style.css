@@ -180,7 +180,7 @@ tr.space > td {
 
 #nav {
     position: fixed;
-    left: 50%; top: 20%;
+    left: 50%; top: 200px;
     margin-left:-368px;
     width:750px;
     list-style:none;
