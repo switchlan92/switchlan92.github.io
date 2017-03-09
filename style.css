@@ -47,61 +47,6 @@ blockquote, q {
 }
 /* End of Eric Meyer's CSS Reset */
 
-
-
-
-
-
-/* Parallax Styles */
-.parallax {
-    perspective: 300px;
-    height: 500px; /* fallback */
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.parallax_group {
-    position: relative;
-    height: 500px; /* fallback */
-    height: 100vh;
-    transform-style: preserve-3d;
-}
-
-.parallax_layer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.parallax_layer-fore {
-    transform: translateZ(90px) scale(.7);
-    z-index: 1;
-}
-
-.parallax_layer-base {
-    transform: translateZ(0);
-    z-index: 4;
-}
-
-.parallax_layer-back {
-    transform: translateZ(-300px) scale(2);
-    z-index: 3;
-}
-
-.parallax_layer-deep {
-    transform: translateZ(-600px) scale(3);
-    z-index: 2;
-}
-/* End Parallax Styles */
-
-
-
-
-
-
 /* Font imports */
 @font-face {
     font-family: 'caviar_dreamsregular';
@@ -120,17 +65,6 @@ body {
     font-family: caviar_dreamsregular;
     font-size: 28px;
 }
-
-/*html {
-    background: url(about.jpg) no-repeat left center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='about.jpg', sizingMethod='scale')";
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.about.jpg', sizingMethod='scale');
-
-}*/
 
 header {
     display: block;
@@ -215,15 +149,11 @@ img.photography {
 }
 
 a:hover {
-    color: #ff6a00;
+    color: #66cccc;
 }
 
 #nav a:hover {
-    color: #ff6a00;
-}
-
-#nav li.active a {
-    color: #ff6a00;
+    color: #66cccc;
 }
 
 #home {
@@ -238,9 +168,4 @@ a:hover {
 #uprising {
     position: absolute;
     top: 1965px;
-}
-
-#contact {
-    position: absolute;
-    top: 3580px;
 }
